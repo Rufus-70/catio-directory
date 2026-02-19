@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Catio Builders Directory | Find Local Cat Enclosure Contractors</title>
+    <meta name="description" content="Find and compare custom catio builders near you. Get quotes from verified cat enclosure contractors for window boxes, patios, standalone structures, and cat tunnels.">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://catio-builders.com/">
+    <meta property="og:title" content="Custom Catio Builders Directory">
+    <meta property="og:description" content="Find verified cat enclosure builders in your area. 25+ builders across the Pacific Northwest.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .featured-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .builder-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .catio-type-badge {
+            background: #f3f4f6;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 12px;
+            margin: 2px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center">
+                    <span class="text-2xl">🐱</span>
+                    <h1 class="ml-2 text-xl font-bold text-gray-900">Catio Builders Directory</h1>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#search" class="text-gray-600 hover:text-gray-900">Search</a>
+                    <a href="#cities" class="text-gray-600 hover:text-gray-900">Browse Cities</a>
+                    <a href="#claim" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">List Your Business</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Find Custom Catio Builders Near You
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-purple-100">
+                <span id="totalBuilders">25</span> verified builders across <span id="totalCities">15</span> cities in the Pacific Northwest
+            </p>
+            
+            <!-- Search Form -->
+            <div class="max-w-2xl mx-auto" id="search">
+                <div class="bg-white rounded-lg shadow-lg p-2 flex flex-col md:flex-row gap-2">
+                    <input 
+                        type="text" 
+                        id="citySearch"
+                        placeholder="Search by city or builder name..." 
+                        class="flex-1 px-4 py-3 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        onkeyup="handleSearch(event)"
+                    >
+                    <button 
+                        onclick="performSearch()"
+                        class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition"
+                    >
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Builder (Portland Catios) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-purple-500 builder-card transition-all">
+            <div class="featured-badge text-white px-6 py-2 text-sm font-semibold flex items-center">
+                <span>⭐ FEATURED BUILDER</span>
+                <span class="ml-auto text-xs opacity-75">Premium Partner</span>
+            </div>
+            <div class="p-6">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="text-2xl font-bold text-gray-900">Portland Catios</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">✓ Verified</span>
+                        </div>
+                        <p class="text-purple-600 font-semibold mb-4">📍 Portland, OR (Happy Valley)</p>
+                        
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <span class="ml-2 text-gray-600">5.0 rating</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <span class="catio-type-badge">🪟 Window Box</span>
+                            <span class="catio-type-badge">🏠 Patio Attached</span>
+                            <span class="catio-type-badge">🏡 Standalone</span>
+                            <span class="catio-type-badge">🚇 Cat Tunnels</span>
+                        </div>
+                        
+                        <p class="text-gray-600 mb-6">
+                            Premium custom catios built with <strong>powder-coated aluminum frames</strong> and 
+                            <strong>welded construction</strong>. Specializing in weatherproof designs for the Pacific Northwest.
+                            Professional installation included. Serving Portland metro area.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-6 text-sm">
+                            <div class="flex items-center text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Powder-Coated Aluminum
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Welded Construction
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Custom Designs
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Professional Install
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="https://portlandcatios.com" target="_blank" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition inline-block">
+                                Get Free Quote
+                            </a>
+                            <a href="tel:503-555-0100" class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-gray-400 transition inline-block">
+                                📞 Call Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/3">
+                        <div class="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-lg w-full h-48 flex items-center justify-center mb-4">
+                            <span class="text-6xl">🏠🐱</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <div class="text-sm text-gray-600 mb-1">Typical Price Range</div>
+                            <div class="text-2xl font-bold text-gray-900">$2,500 - $15,000+</div>
+                            <div class="text-xs text-gray-500 mt-1">Based on size and features</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results (Hidden by default) -->
+    <section id="searchResults" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 hidden">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-900">Search Results</h3>
+            <button onclick="clearSearch()" class="text-purple-600 hover:text-purple-800">Clear search</button>
+        </div>
+        <div id="searchResultsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Results inserted by JS -->
+        </div>
+    </section>
+
+    <!-- Browse by City -->
+    <section id="cities" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">Browse by Location</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="citiesList">
+            <!-- Cities inserted by JS -->
+        </div>
+    </section>
+
+    <!-- All Builders -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">All Catio Builders</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="allBuildersList">
+            <!-- Builders inserted by JS -->
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="claim" class="bg-gray-900 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-4">Are You a Catio Builder?</h3>
+            <p class="text-xl text-gray-300 mb-8">
+                Join our directory and get qualified leads from cat owners looking for custom catios.
+            </p>
+            <a href="mailto:hello@catio-builders.com?subject=Claim My Listing" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition inline-block">
+                Claim Your Free Listing
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600">© 2026 Catio Builders Directory. All rights reserved.</p>
+                    <p class="text-xs text-gray-400 mt-1">Helping cats enjoy the outdoors safely since 2026</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Privacy</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Terms</a>
+                    <a href="mailto:hello@catio-builders.com" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Builder Detail Modal -->
+    <div id="builderModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div id="modalContent">
+                <!-- Content inserted by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Builder Data -->
+    <script src="data/builders.js"></script>
+    
+    <script>
+        // Initialize page with data
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update stats
+            document.getElementById('totalBuilders').textContent = BUILDERS_DATA.length;
+            document.getElementById('totalCities').textContent = Object.keys(CITIES_DATA).length;
+            
+            // Render city cards
+            renderCities();
+            
+            // Render all builders (except Portland Catios which is featured)
+            renderAllBuilders();
+        });
+        
+        function renderCities() {
+            const container = document.getElementById('citiesList');
+            const cityEntries = Object.entries(CITIES_DATA).slice(0, 12); // Top 12 cities
+            
+            container.innerHTML = cityEntries.map(([cityName, builders]) => `
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer builder-card" 
+                     onclick="showCityBuilders('${cityName}')">
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">${cityName}</h4>
+                    <p class="text-gray-600 mb-4">${builders.length} verified catio builder${builders.length > 1 ? 's' : ''}</p>
+                    <span class="text-purple-600 font-semibold hover:text-purple-700">
+                        View Builders →
+                    </span>
+                </div>
+            `).join('');
+        }
+        
+        function renderAllBuilders() {
+            const container = document.getElementById('allBuildersList');
+            
+            // Skip Portland Catios (it's featured) and render the rest
+            const otherBuilders = BUILDERS_DATA.filter(b => b.name !== 'Portland Catios');
+            
+            container.innerHTML = otherBuilders.map(builder => renderBuilderCard(builder)).join('');
+        }
+        
+        function renderBuilderCard(builder) {
+            const rating = builder.rating ? '★'.repeat(Math.floor(builder.rating)) + (builder.rating % 1 >= 0.5 ? '½' : '') : '';
+            const types = (builder.catioTypes || []).slice(0, 3).map(t => formatType(t)).join(', ');
+            
+            return `
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition builder-card cursor-pointer"
+                     onclick="showBuilderDetail('${builder.name.replace(/'/g, "\\'")}')">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-lg font-bold text-gray-900">${builder.name}</h4>
+                        ${builder.rating ? `<span class="text-yellow-400 text-sm">${rating}</span>` : ''}
+                    </div>
+                    <p class="text-purple-600 text-sm mb-3">📍 ${builder.city}, ${builder.state}</p>
+                    <p class="text-gray-500 text-sm mb-4">${types || 'Custom Catios'}</p>
+                    <div class="flex justify-between items-center">
+                        ${builder.website ? `<a href="${builder.website}" target="_blank" class="text-purple-600 text-sm hover:underline" onclick="event.stopPropagation()">Visit Website</a>` : ''}
+                        ${builder.phone ? `<a href="tel:${builder.phone}" class="text-gray-600 text-sm hover:underline" onclick="event.stopPropagation()">📞 Call</a>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+        
+        function formatType(type) {
+            const typeMap = {
+                'window_box': 'Window Box',
+                'patio': 'Patio',
+                'standalone': 'Standalone',
+                'tunnel': 'Tunnel',
+                'custom': 'Custom'
+            };
+            return typeMap[type] || type;
+        }
+        
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        }
+        
+        function performSearch() {
+            const query = document.getElementById('citySearch').value.trim().toLowerCase();
+            
+            if (!query) {
+                clearSearch();
+                return;
+            }
+            
+            const results = BUILDERS_DATA.filter(builder =>
+                builder.name.toLowerCase().includes(query) ||
+                builder.city.toLowerCase().includes(query) ||
+                builder.state.toLowerCase().includes(query)
+            );
+            
+            const resultsSection = document.getElementById('searchResults');
+            const resultsList = document.getElementById('searchResultsList');
+            
+            if (results.length === 0) {
+                resultsList.innerHTML = `
+                    <div class="col-span-3 text-center py-12 text-gray-500">
+                        <p class="text-xl mb-2">No builders found for "${query}"</p>
+                        <p>Try searching for a different city or builder name.</p>
+                    </div>
+                `;
+            } else {
+                resultsList.innerHTML = results.map(builder => renderBuilderCard(builder)).join('');
+            }
+            
+            resultsSection.classList.remove('hidden');
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function clearSearch() {
+            document.getElementById('citySearch').value = '';
+            document.getElementById('searchResults').classList.add('hidden');
+        }
+        
+        function showCityBuilders(cityName) {
+            document.getElementById('citySearch').value = cityName.split(',')[0];
+            performSearch();
+        }
+        
+        function showBuilderDetail(builderName) {
+            const builder = BUILDERS_DATA.find(b => b.name === builderName);
+            if (!builder) return;
+            
+            const modal = document.getElementById('builderModal');
+            const content = document.getElementById('modalContent');
+            
+            const types = (builder.catioTypes || []).map(t => `<span class="catio-type-badge">${formatType(t)}</span>`).join('');
+            const materials = (builder.materials || []).map(m => m.replace(/_/g, ' ')).join(', ') || 'Various';
+            const features = (builder.features || []).map(f => f.replace(/_/g, ' ')).join(', ') || 'Custom options available';
+            
+            content.innerHTML = `
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">${builder.name}</h3>
+                            <p class="text-purple-600">📍 ${builder.city}, ${builder.state} ${builder.postalCode || ''}</p>
+                        </div>
+                        <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+                    </div>
+                    
+                    ${builder.rating ? `
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">${'★'.repeat(Math.floor(builder.rating))}</span>
+                        <span class="ml-2 text-gray-600">${builder.rating} rating</span>
+                    </div>
+                    ` : ''}
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Catio Types</h4>
+                        <div>${types || 'Custom designs available'}</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">Materials</h4>
+                        <p class="text-gray-600 capitalize">${materials}</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-700 mb-2">Features</h4>
+                        <p class="text-gray-600 capitalize">${features}</p>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        ${builder.website ? `<a href="${builder.website}" target="_blank" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition flex-1 text-center">Visit Website</a>` : ''}
+                        ${builder.phone ? `<a href="tel:${builder.phone}" class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-gray-400 transition flex-1 text-center">📞 ${builder.phone}</a>` : ''}
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+        
+        function closeModal() {
+            document.getElementById('builderModal').classList.add('hidden');
+        }
+        
+        // Close modal on background click
+        document.getElementById('builderModal').addEventListener('click', (e) => {
+            if (e.target.id === 'builderModal') {
+                closeModal();
+            }
+        });
+        
+        // Close modal on ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
