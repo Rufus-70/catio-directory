@@ -1,0 +1,44 @@
+# Data files (contain scraped business information)
+data/raw/*.csv
+data/cleaned/*.csv
+data/verified/*.csv
+data/enriched/*.csv
+
+# Logs
+logs/*.log
+logs/*.txt
+
+# API keys and credentials
+.env
+*.key
+*.secret
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+
+# Crawl4AI cache
+.crawl4ai_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Keep directory structure but ignore contents
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!data/verified/.gitkeep
+!data/enriched/.gitkeep
+!logs/.gitkeep
