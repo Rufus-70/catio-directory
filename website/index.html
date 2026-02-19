@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Catio Builders Directory | Find Local Cat Enclosure Contractors</title>
+    <meta name="description" content="Find and compare custom catio builders near you. Get quotes from verified cat enclosure contractors for window boxes, patios, standalone structures, and cat tunnels.">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://catio-builders.com/">
+    <meta property="og:title" content="Custom Catio Builders Directory">
+    <meta property="og:description" content="Find verified cat enclosure builders in your area">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS CDN for rapid prototyping -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .featured-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl">🐱</span>
+                    <h1 class="ml-2 text-xl font-bold text-gray-900">Catio Builders Directory</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#search" class="text-gray-600 hover:text-gray-900">Search</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#claim" class="text-gray-600 hover:text-gray-900">List Your Business</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Find Custom Catio Builders Near You
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-purple-100">
+                Compare verified cat enclosure contractors. Get quotes for window boxes, patios, and standalone structures.
+            </p>
+            
+            <!-- Search Form -->
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-2 flex flex-col md:flex-row gap-2">
+                    <input 
+                        type="text" 
+                        id="citySearch"
+                        placeholder="Enter your city (e.g., Portland, OR)" 
+                        class="flex-1 px-4 py-3 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    >
+                    <button 
+                        onclick="searchBuilders()"
+                        class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition"
+                    >
+                        Search Builders
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Builder (Portland Catios) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-purple-500">
+            <div class="featured-badge text-white px-6 py-2 text-sm font-semibold">
+                ⭐ FEATURED BUILDER
+            </div>
+            <div class="p-6">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Portland Catios</h3>
+                        <p class="text-purple-600 font-semibold mb-4">Portland, OR</p>
+                        
+                        <div class="mb-4">
+                            <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">Powder-Coated Aluminum</span>
+                            <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">Welded Construction</span>
+                            <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm mr-2 mb-2">Custom Designs</span>
+                        </div>
+                        
+                        <p class="text-gray-600 mb-6">
+                            Premium custom catios built with commercial-grade materials. Specializing in powder-coated aluminum frames, 
+                            welded construction, and weather-resistant designs. Serving Portland metro area.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-center text-sm text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Window Box Catios
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Patio Catios
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Standalone Structures
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Cat Tunnels
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <button class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                                Get Free Quote
+                            </button>
+                            <button class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-gray-400 transition">
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/3">
+                        <img 
+                            src="https://via.placeholder.com/400x300.png?text=Portland+Catios" 
+                            alt="Portland Catios Example"
+                            class="rounded-lg w-full h-64 object-cover"
+                        >
+                        <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                            <div class="text-sm text-gray-600 mb-2">Typical Price Range</div>
+                            <div class="text-2xl font-bold text-gray-900">$2,500 - $15,000+</div>
+                            <div class="text-xs text-gray-500 mt-1">Depends on size and features</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section id="results" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">Browse by Location</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="buildersList">
+            <!-- Results will be inserted here by JavaScript -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Seattle, WA</h4>
+                <p class="text-gray-600 mb-4">15 verified catio builders</p>
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">
+                    View Builders →
+                </a>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Portland, OR</h4>
+                <p class="text-gray-600 mb-4">23 verified catio builders</p>
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">
+                    View Builders →
+                </a>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Vancouver, BC</h4>
+                <p class="text-gray-600 mb-4">8 verified catio builders</p>
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">
+                    View Builders →
+                </a>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Eugene, OR</h4>
+                <p class="text-gray-600 mb-4">6 verified catio builders</p>
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">
+                    View Builders →
+                </a>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Spokane, WA</h4>
+                <p class="text-gray-600 mb-4">4 verified catio builders</p>
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">
+                    View Builders →
+                </a>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Boise, ID</h4>
+                <p class="text-gray-600 mb-4">5 verified catio builders</p>
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">
+                    View Builders →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-900 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-4">Are You a Catio Builder?</h3>
+            <p class="text-xl text-gray-300 mb-8">
+                Join our directory and get qualified leads from cat owners in your area.
+            </p>
+            <button class="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+                Claim Your Free Listing
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600">© 2026 Catio Builders Directory. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#privacy" class="text-gray-600 hover:text-gray-900">Privacy</a>
+                    <a href="#terms" class="text-gray-600 hover:text-gray-900">Terms</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function searchBuilders() {
+            const city = document.getElementById('citySearch').value;
+            alert('Searching for catio builders in: ' + city);
+            // TODO: Implement actual search with Supabase
+        }
+        
+        // TODO: Load actual builder data from Supabase/CSV
+        // For now, showing static placeholders
+    </script>
+</body>
+</html>
